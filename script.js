@@ -1,13 +1,18 @@
-function mostrarPassword() {
-  let campo = document.getElementById("password");
-  if (campo.type == "password") {
-    campo.type = "text";
-  } else {
-    campo.type = "password";
-  }
-}
+let campoClave = document.getElementById("clave");
+let botonOjo = document.getElementById("verClave");
+let botonIngresar = document.getElementById("btnIngresar");
 
-document.querySelector("form").addEventListener("submit", function(e){
+botonOjo.addEventListener("click", function() {
+  if (campoClave.type == "password") {
+    campoClave.type = "text";
+    botonOjo.textContent = "🙈";
+  } else {
+    campoClave.type = "password";
+    botonOjo.textContent = "👁️";
+  }
+});
+
+botonIngresar.addEventListener("click", function(e) {
   e.preventDefault();
   alert("Entrando a EclessySoft...");
 });

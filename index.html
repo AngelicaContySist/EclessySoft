@@ -2,48 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EclessySoft - Iniciar Sesión</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <div class="logo-icon">✝️</div>
-      <h1>EclessySoft</h1>
-      <p>Sistema de Gestión de Iglesias</p>
+
+  <h1 class="titulo-principal">EclessySoft</h1>
+  <p class="subtitulo">SISTEMA DE GESTIÓN DE IGLESIAS</p>
+
+  <div class="card">
+    <h2>Bienvenido</h2>
+    <p class="inicia">Inicia sesión</p>
+
+    <label>Rol</label>
+    <select id="rol">
+      <option>Administrador</option>
+      <option>Secretario</option>
+      <option>Tesorero</option>
+    </select>
+
+    <label>Correo electrónico</label>
+    <input type="email" id="correo" placeholder="ejemplo@iglesia.com">
+
+    <label>Contraseña</label>
+    <div class="password-box">
+      <input type="password" id="clave" placeholder="********">
+      <button type="button" id="verClave">👁️</button>
     </div>
 
-    <div class="card">
-      <h2>Bienvenido</h2>
-      <p class="subtitle">Inicia sesión</p>
+    <a href="#" class="olvidaste">¿Olvidaste tu contraseña?</a>
 
-      <label>Rol</label>
-      <select id="rol">
-        <option>Administrador</option>
-        <option>Pastor</option>
-        <option>Secretaria</option>
-        <option>Tesorero</option>
-      </select>
+    <button id="btnIngresar" class="btn-ingresar">Ingresar →</button>
 
-      <label>Correo electrónico</label>
-      <input type="email" id="correo" placeholder="ejemplo@iglesia.com">
-
-      <label>Contraseña</label>
-      <div class="password-box">
-        <input type="password" id="clave" placeholder="••••••••">
-        <button type="button" id="verClave">👁️</button>
-      </div>
-
-      <a href="#" class="link">¿Olvidaste tu contraseña?</a>
-
-      <button class="btn-ingresar" id="btnIngresar">Ingresar →</button>
-
-      <p class="registro">¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
-    </div>
-
-    <p class="copyright">© 2026 EclessySoft. Todos los derechos reservados.</p>
+    <p class="registro">¿No tienes una cuenta? <b>Regístrate aquí</b></p>
   </div>
+
+  <p class="footer">© 2026 EclessySoft. Todos los derechos reservados.</p>
+
   <script src="script.js"></script>
 </body>
 </html>
